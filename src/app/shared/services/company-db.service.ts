@@ -16,7 +16,7 @@ export class CompanyDbService {
   constructor(private http: HttpClient) {}
 
   getFirstTenCompanies(): Observable<Company[]> {
-    const params = new HttpParams().set('page', '1').set('limit', '10');
+    const params = new HttpParams().set('page', '1').set('limit', '9');
     return this.http.get<Company[]>(this.MOCK_API_URL, { params });
   }
 
