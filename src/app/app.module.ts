@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CompanyDetailComponent } from './pages/company-detail/company-detail.component';
 import { CompaniesComponent } from './pages/companies/companies.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent, CompanyDetailComponent, CompaniesComponent],
@@ -15,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent],
