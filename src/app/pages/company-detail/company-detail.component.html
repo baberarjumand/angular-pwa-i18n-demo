@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div
+      class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 text-center"
+      *ngIf="this.company"
+    >
+      <img class="w-100" src="{{ this.company.imageUrl }}" alt="" />
+      <h1>{{ company.name }}</h1>
+      <p>{{ company.city }}, {{ company.country }}</p>
+      <h5>{{ company.phrase }}</h5>
+      <form
+        [formGroup]="this.companyForm"
+        (ngSubmit)="this.updateCompanyPhrase()"
+      >
+        <div class="form-group row my-5">
+          <label for="inputPhrase" class="col-3 col-form-label"
+            >Update Phrase:</label
+          >
+          <div class="col-7">
+            <input
+              type="text"
+              class="form-control"
+              id="inputPhrase"
+              formControlName="companyPhrase"
+            />
+          </div>
+          <div class="col-2">
+            <button class="btn btn-success" type="submit">Update</button>
+          </div>
+        </div>
+      </form>
+      <a class="btn btn-primary" routerLink="">Back</a>
+      <a class="btn btn-danger mx-3" (click)="this.deleteCompany()"
+        >Delete This Company</a
+      >
+      <div
+        class="text-center my-3"
+        style="color: red"
+        *ngIf="this.deleteCompanyFlag"
+      >
+        Click again to delete this company
+      </div>
+    </div>
+  </div>
+</div>

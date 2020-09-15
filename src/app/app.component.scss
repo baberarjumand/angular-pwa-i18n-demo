@@ -1,44 +1,43 @@
-.redbox {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
+// flex experiment styles
+// .redbox {
+//   width: 100px;
+//   height: 100px;
+//   background-color: red;
+// }
 
-.redbox:hover,
-.bluebox:hover {
-  transform: scale(1.5);
-  transition: ease 0.5s;
-}
+// .redbox:hover,
+// .bluebox:hover {
+//   transform: scale(1.5);
+//   transition: ease 0.5s;
+// }
 
-.bluebox {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-}
+// .bluebox {
+//   width: 100px;
+//   height: 100px;
+//   background-color: blue;
+// }
 
-.box {
-  display: flex;
-  flex-direction: column;
-}
+// .box {
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.redrow,
-.bluerow {
-  display: flex;
-  align-items: center;
-}
+// .redrow,
+// .bluerow {
+//   display: flex;
+//   align-items: center;
+// }
 
-span {
-}
+// @media only screen and (max-width: 576px) {
+//   .box {
+//     position: fixed;
+//     bottom: 0;
+//     flex-direction: row;
 
-@media only screen and (max-width: 576px) {
-  .box {
-    position: fixed;
-    bottom: 0;
-    flex-direction: row;
-
-    .redrow,
-    .bluerow {
-      flex-direction: column;
-    }
-  }
-}
+//     .redrow,
+//     .bluerow {
+//       flex-direction: column;
+//     }
+//   }
+// }
+// END OF flex experiment styles
