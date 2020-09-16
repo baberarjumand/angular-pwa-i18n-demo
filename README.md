@@ -22,10 +22,7 @@ https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps<br>
 https://mockapi.io/docs<br>
 https://github.com/ngx-translate/core<br>
 <hr>
-To test the PWA functionality in a local environment, the project needs to be served over HTTP HTTPS.<br>
-To do this, one option is to use the lightweight [http-server](https://www.npmjs.com/package/http-server) library.
-<hr>
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+
 
 ## Development server
 
