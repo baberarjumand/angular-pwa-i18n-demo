@@ -1,4 +1,21 @@
-# AngularPwaHttpsCrud
+# Angular PWA i18n Demo
+
+This Angular mini-project is a demo of 3 key features:
+- basic CRUD using HTTP protocols
+- PWA Support (using [@angular/pwa](https://angular.io/guide/service-worker-getting-started))
+- Internationalization/Localization/Globalization (using [ngx-translate](https://github.com/ngx-translate/core))
+
+A live demo of this mini-project can be found here:<br>
+https://angular-pwa-i18n-demo.web.app
+
+Data is fetched from a mock API (which was created using [MockAPI.io](https://mockapi.io/)).<br>
+The data set can be viewed in it's RAW form (JSON format) here:<br>
+https://5f59cabb8040620016ab960d.mockapi.io/companies
+
+The possible queries on this data set are documented here:<br>
+https://mockapi.io/docs
+
+<hr>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
 
