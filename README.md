@@ -14,9 +14,17 @@ https://5f59cabb8040620016ab960d.mockapi.io/companies
 
 The possible queries on this data set are documented here:<br>
 https://mockapi.io/docs
-
 <hr>
-
+The following tutorials were referenced in the development of this mini-project:<br>
+https://angular.io/guide/service-worker-getting-started<br>
+https://medium.com/poka-techblog/turn-your-angular-app-into-a-pwa-in-4-easy-steps-543510a9b626<br>
+https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps<br>
+https://mockapi.io/docs<br>
+https://github.com/ngx-translate/core<br>
+<hr>
+To test the PWA functionality in a local environment, the project needs to be served over HTTP HTTPS.<br>
+To do this, one option is to use the lightweight [http-server](https://www.npmjs.com/package/http-server) library.
+<hr>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
 
 ## Development server
