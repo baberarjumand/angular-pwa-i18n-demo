@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/angular-pwa-https-crud",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}
