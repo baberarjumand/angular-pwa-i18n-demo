@@ -14,15 +14,44 @@ https://5f59cabb8040620016ab960d.mockapi.io/companies
 
 The possible queries on this data set are documented here:<br>
 https://mockapi.io/docs
-<hr>
+
+## Test PWA Functionality in a local environment
+
+To test the PWA functionality in a local environment, the project build files need to be served over HTTP/HTTPS.<br>
+To help with this, I used the lightweight [http-server](https://www.npmjs.com/package/http-server) library.<br>
+
+1. To install http-server:
+```
+npm i http-server
+```
+1. Or to install it globally on your local machine:
+```
+npm i -g http-server
+```
+2. Prepare the project files to serve using (Angular Service Workers are registered only in production mode):
+```
+ng build --prod
+```
+3. Serve the project locally:
+```
+http-server -p 8080 -c-1 dist/angular-pwa-https-crud
+```
+4. The project will be served locally at:
+```
+http://localhost:8080/
+```
+
+---
+
 The following tutorials were referenced in the development of this mini-project:<br>
 https://angular.io/guide/service-worker-getting-started<br>
 https://medium.com/poka-techblog/turn-your-angular-app-into-a-pwa-in-4-easy-steps-543510a9b626<br>
 https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps<br>
 https://mockapi.io/docs<br>
 https://github.com/ngx-translate/core<br>
-<hr>
 
+---
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
 
 ## Development server
 
