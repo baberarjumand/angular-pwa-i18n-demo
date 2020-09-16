@@ -44,6 +44,7 @@ http://localhost:8080/
 ---
 
 The following tutorials were referenced in the development of this mini-project:<br>
+https://pwa.ng/<br>
 https://angular.io/guide/service-worker-getting-started<br>
 https://medium.com/poka-techblog/turn-your-angular-app-into-a-pwa-in-4-easy-steps-543510a9b626<br>
 https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps<br>
