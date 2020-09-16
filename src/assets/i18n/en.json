@@ -1,0 +1,14 @@
+{
+  "companies": {
+    "heading": "Companies",
+    "langaugeBtn": "Lang",
+    "infoBtn": "Info"
+  },
+  "company-detail": {
+    "updatePhraseLabelText": "Update Phrase",
+    "updateBtnText": "Update",
+    "backBtnText": "Back",
+    "deleteBtnText": "Delete This Company",
+    "deleteWarning": "Click again to delete this company"
+  }
+}

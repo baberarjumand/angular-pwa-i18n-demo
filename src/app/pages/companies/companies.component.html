@@ -3,6 +3,36 @@
     <div class="col-10 offset-1 col-sm-8 offset-sm-2">
       <!-- deck of cards inside cols -->
       <div class="row">
+        <div class="col-12 d-flex justify-content-between">
+          <!-- <div></div> -->
+          <h1 class="">
+            {{ "companies.heading" | translate }}
+          </h1>
+          <div class="dropdown align-self-center">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              {{ "companies.langaugeBtn" | translate }}
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" (click)="this.setCurrentLanguage('en')"
+                >English</a
+              >
+              <a class="dropdown-item" (click)="this.setCurrentLanguage('de')"
+                >Deutsche</a
+              >
+              <a class="dropdown-item" (click)="this.setCurrentLanguage('fr')"
+                >Français</a
+              >
+            </div>
+          </div>
+        </div>
+
         <div
           class="col-12 col-sm-6 col-lg-4 my-3"
           *ngFor="let company of this.companies"
@@ -20,7 +50,7 @@
               <a
                 class="btn btn-primary mt-auto"
                 [routerLink]="['/company', company.id]"
-                >Info</a
+                >{{ "companies.infoBtn" | translate }}</a
               >
             </div>
           </div>

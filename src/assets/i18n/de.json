@@ -1,0 +1,14 @@
+{
+  "companies": {
+    "heading": "Unternehmen",
+    "langaugeBtn": "Sprache",
+    "infoBtn": "Die Info"
+  },
+  "company-detail": {
+    "updatePhraseLabelText": "Phrase aktualisieren",
+    "updateBtnText": "Aktualisieren",
+    "backBtnText": "Zurück",
+    "deleteBtnText": "Löschen Sie diese Firma",
+    "deleteWarning": "Klicken Sie erneut, um diese Firma zu löschen"
+  }
+}

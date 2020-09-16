@@ -14,7 +14,7 @@
       >
         <div class="form-group row my-5">
           <label for="inputPhrase" class="col-3 col-form-label"
-            >Update Phrase:</label
+            >{{ "company-detail.updatePhraseLabelText" | translate }}:</label
           >
           <div class="col-7">
             <input
@@ -25,20 +25,24 @@
             />
           </div>
           <div class="col-2">
-            <button class="btn btn-success" type="submit">Update</button>
+            <button class="btn btn-success" type="submit">
+              {{ "company-detail.updateBtnText" | translate }}
+            </button>
           </div>
         </div>
       </form>
-      <a class="btn btn-primary" routerLink="">Back</a>
-      <a class="btn btn-danger mx-3" (click)="this.deleteCompany()"
-        >Delete This Company</a
-      >
+      <a class="btn btn-primary" routerLink="">{{
+        "company-detail.backBtnText" | translate
+      }}</a>
+      <a class="btn btn-danger mx-3" (click)="this.deleteCompany()">{{
+        "company-detail.deleteBtnText" | translate
+      }}</a>
       <div
         class="text-center my-3"
         style="color: red"
         *ngIf="this.deleteCompanyFlag"
       >
-        Click again to delete this company
+        {{ "company-detail.deleteWarning" | translate }}
       </div>
     </div>
   </div>

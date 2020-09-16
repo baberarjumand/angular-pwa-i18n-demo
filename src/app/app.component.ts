@@ -1,8 +1,5 @@
-import { CompanyDbService } from './shared/services/company-db.service';
-import { HttpHeaders } from '@angular/common/http';
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Company } from './shared/model/company.model';
-import { Subscription } from 'rxjs';
+import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +8,9 @@ import { Subscription } from 'rxjs';
 })
 export class AppComponent {
   title = 'angular-pwa-https-crud';
+
+  constructor(private translateService: TranslateService) {
+    this.translateService.setDefaultLang('en');
+    this.translateService.use('en');
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { Company } from 'src/app/shared/model/company.model';
 import { CompanyDbService } from 'src/app/shared/services/company-db.service';
@@ -12,7 +13,10 @@ export class CompaniesComponent implements OnInit, OnDestroy {
   companies: Company[];
   companiesSub: Subscription;
 
-  constructor(private companyService: CompanyDbService) {}
+  constructor(
+    private companyService: CompanyDbService,
+    private translateService: TranslateService
+  ) {}
 
   ngOnInit(): void {
     this.companiesSub = this.companyService
@@ -27,5 +31,9 @@ export class CompaniesComponent implements OnInit, OnDestroy {
     if (this.companiesSub) {
       this.companiesSub.unsubscribe();
     }
+  }
+
+  setCurrentLanguage(locale): void {
+    this.translateService.use(locale);
   }
 }
